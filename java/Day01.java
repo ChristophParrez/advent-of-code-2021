@@ -23,7 +23,6 @@ public class Day01 {
             }
 
             System.out.println("Result for " + fileName + " with window of " + windowLength + ": " + counter);
-
         } catch (Exception e) {
             System.err.println("Error: " + e);
         }
