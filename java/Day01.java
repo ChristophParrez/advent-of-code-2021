@@ -29,24 +29,4 @@ public class Day01 {
         }
     }
 
-    // private static void processFileWithSum(String fileName, int windowLength) {
-    //     try {
-    //         Stream<String> lines = Files.lines(Paths.get("resources/day01/" + fileName));
-    //         List<Long> numbers = lines.filter(line -> line.matches("[0-9]+")).map(Long::parseLong).toList();
-    //
-    //         long counter = 0;
-    //         long previousSum = 0;
-    //         for (int i = 0; i <= numbers.size() - windowLength; i++) {
-    //             long sumOfWindow = numbers.subList(i, i + windowLength).stream().mapToLong(Long::longValue).sum();
-    //             if (i > 0 && sumOfWindow > previousSum) counter++;
-    //             previousSum = sumOfWindow;
-    //         }
-    //
-    //         System.out.println("Result for " + fileName + " with window of " + windowLength + ": " + counter);
-    //
-    //     } catch (Exception e) {
-    //         System.err.println("Error: " + e);
-    //     }
-    // }
-
 }
