@@ -32,8 +32,8 @@ public class Day03 {
         StringBuilder gammaRate = new StringBuilder();
         StringBuilder epsilonRate = new StringBuilder();
 
-        for (int i = 0; i < fileColumns; i++) {
-            int dominantBit = findDominantBitInColumn(lines, i);
+        for (int column = 0; column < fileColumns; column++) {
+            int dominantBit = findDominantBitInColumn(lines, column);
             gammaRate.append(dominantBit == 0 ? "0" : "1");
             epsilonRate.append(dominantBit == 0 ? "1" : "0");
         }
